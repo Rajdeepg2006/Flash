@@ -1,0 +1,84 @@
+@keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #8e2de2, #4a00e0, #00c6ff, #0072ff);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: scale(0.9);}
+    to {opacity: 1; transform: scale(1);}
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 14px;
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+input:focus, select:focus {
+    border: 2px solid #00ffe5;
+    box-shadow: 0 0 10px #00ffe5, 0 0 20px #00ffe5;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+button {
+    background: #00ffe5;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00c6ff;
+    transform: scale(1.05);
+}

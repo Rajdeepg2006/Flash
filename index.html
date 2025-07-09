@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>⚡Flash</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="card">
+        <h1>⚡Flashblaze</h1>
+        <p>Download videos from any sites.</p>
+        <form method="POST">
+            <input type="text" name="url" placeholder="Paste video URL here(by Rajdeep Ghosh)" required>
+            <select name="quality" required>
+                <option value="audio">Audio Only (mp3/m4a)</option>
+                <option value="480">480p</option>
+                <option value="720" selected>720p</option>
+                <option value="1080">1080p</option>
+            </select>
+            <button type="submit">Download Now 🚀</button>
+        </form>
+    </div>
+    <op></p>
+    
+</body>
+</html>
